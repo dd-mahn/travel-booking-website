@@ -1,0 +1,34 @@
+.header{
+    padding: 2rem 0;
+}
+.nav__container{
+    background-color: #fff;
+}
+.brand span{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.login__btn{
+    font-weight: 500;
+}
+
+.register__btn{
+    background: var(--secondary-color) !important;
+}
+
+.register__btn a{
+    color: var(--primary-color) !important;
+}
+
+.menu{
+    list-style: none;
+    margin-left: 4rem;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
