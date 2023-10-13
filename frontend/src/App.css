@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto&display=swap');
+
+:root{
+    --primary-color: #004643;
+    --secondary-color:#f9bc60;
+    --text-color-light:#fffffe;
+    --text-color-dark: #001e1d;
+    --font-name: 'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-name);
+}
+
+section {
+    padding: 50px 0px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0 !important;
+    padding: 0;
+}
+.primary__btn {
+    background: var(--primary-color) !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 0.4rem 1.5rem !important;
+}
+  
+.primary__btn a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.primary__btn a:hover {
+    color: inherit;
+}
+.secondary__btn {
+    background: transparent !important;
+    color: #0b2727 !important;
+    border: none !important;
+    font-weight: 500 !important;
+}
+
+.secondary__btn a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--heading-color);
+}
+
+.secondary__btn a:hover {
+    color: inherit;
+}
+
+.about__on-display{
+    opacity: 1 !important;
+    margin-left: 0 !important;
+
+}
+
+.about__on-display h6{
+    font-size: 1.2rem;
+}
+
+.about__on-display i{
+    color: var(--secondary-color) !important;
+}
+
+
