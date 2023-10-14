@@ -2,31 +2,14 @@ import React, { useState, useEffect } from 'react';
 import '../styles/home.css'
 import { Container, Row, Col, Button } from 'reactstrap'
 import { Link } from 'react-router-dom'
-import ImageSlider from '../utils/ImageSlider';
 
 import heroImg from '../assets/images/hero-img.png'
-import about1 from '../assets/images/about-1.png'
-import about2 from '../assets/images/about-2.png'
-import about3 from '../assets/images/about-3.png'
-import about4 from '../assets/images/about-4.png'
+import About from './HomeComponent/About';
+
 
 
 
 const Home = () => {
-    const aboutImg = [about1, about2, about3, about4]
-    const [activeIndex, setActiveIndex] = useState(0);
-
-    const nextSlide = () => {
-        setActiveIndex((activeIndex + 1) % aboutImg.length);
-    };
-
-    useEffect(() => {
-        const autoSlideInterval = setInterval(nextSlide, 5000);
-        return () => {
-        clearInterval(autoSlideInterval);
-        };
-    }, [activeIndex]);
-
   return (
     <>
     {/* Hero start  */}
@@ -49,46 +32,22 @@ const Home = () => {
         </Container>
     </section>
     {/* Hero end */}
+
     {/* About start */}
-    <section className="about">
-        <Container>
-            <Row>
-                <Col lg='6'>
-                    <div className="about__carousel">
-                        <div className="about__carousel-display">
-                            <img src={about1} alt="" />
-                        </div>
-                    </div>
-                </Col>
-                <Col lg='6'>
-                    <div className="about__title">
-                        <h1>About what we serve</h1>
-                    </div>
-                    <div className="about__wrapper">
-                        <ul className="wrapper__list">
-                            <li className="wrapper__list-item d-flex align-items-center gap-4 mt-4 about__on-display">
-                                <i class="ri-star-line"></i>
-                                <h6>Meet Scott - our new AI guide that will help you along creating your dream trip.</h6>
-                            </li>
-                            <li className="wrapper__list-item d-flex align-items-center gap-4 mt-4">
-                                <i class="ri-equalizer-line"></i>
-                                <h6>Everything is customizable up to you.</h6>
-                            </li>
-                            <li className="wrapper__list-item d-flex align-items-center gap-4 mt-4">
-                                <i class="ri-calendar-check-line"></i>
-                                <h6>Many selected tours are carefully prepared with our experience.</h6>
-                            </li>
-                            <li className="wrapper__list-item d-flex align-items-center gap-4 mt-4">
-                                <i class="ri-global-line"></i>
-                                <h6>Open community to share your memories with travelers around the world.</h6>
-                            </li>
-                        </ul>
-                    </div>
-                </Col>
-            </Row>
-        </Container>
-    </section>
+    <About />
     {/* About end */}
+
+    {/* Scott start */}
+    {/* Scott end */}
+
+    {/* Selected tours start */}
+    {/* Selected tours end */}
+
+    {/* Galerry start */}
+    {/* Galerry end */}
+
+    {/* Community start */}
+    {/* Community end */}
 
     </>
   )
