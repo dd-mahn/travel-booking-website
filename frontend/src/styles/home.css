@@ -28,18 +28,18 @@
 }
 
 .about__carousel{
-    
 }
 
 .about__carousel-display{
     background: #fff;
-    box-shadow: #0000003b 0px 25px 50px 0px;
-    border-radius: 100px;
+    /* box-shadow: #0000003b 0px 25px 50px 0px; */
+    border-radius: 100px 100px 50px 50px;
     border: 5px solid var(--primary-color);
     margin-right: 3rem;
 }
 .about__carousel-display img{
     width: 100%;
+    height: 100%;
 }
 
 .about__title h1{
