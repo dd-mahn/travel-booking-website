@@ -70,6 +70,10 @@ h1,h2,h3,h4,h5,h6{
 
 .about__on-display i{
     color: var(--secondary-color) !important;
+    transition: .3s;
 }
 
+.about__on-display i:hover{
+    scale:1.2;
+}
 
