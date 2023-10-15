@@ -95,6 +95,10 @@
     font-weight: 600;
 }
 
+.scott__wrapper-title p{
+    margin: 0;
+}
+
 .scott__wrapper-title > p > span{
     color: var(--secondary-color) !important;
 }
