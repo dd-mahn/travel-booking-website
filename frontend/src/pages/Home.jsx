@@ -41,7 +41,7 @@ const Home = () => {
     <section className='scott '>
         <Container>
             <Row>
-                <Col className='d-flex align-items-center flex-column'>
+                <Col className='d-flex align-items-center flex-column mb-5'>
                     <div className="scott__img d-flex align-items-center">
                         <img src={scottImg} alt="" />
                     </div>
@@ -49,7 +49,7 @@ const Home = () => {
                         <div className="scott__wrapper-title">
                             <p>Traveling is an open experience, so feel free to tell <span>Scott</span> about your interests, maybe he will bring a <span>surprise</span>.</p>
                         </div>
-                        <Button className="scott__wrapper-btn secondary__btn d-flex align-items-center justify-content-center"><i class="ri-sun-line"></i></Button>
+                        <Link to='/scott'><Button className="scott__wrapper-btn secondary__btn d-flex align-items-center justify-content-center"><i class="ri-sun-line"></i></Button></Link>
                     </div>
                 </Col>
             </Row>
