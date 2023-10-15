@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 import heroImg from '../assets/images/hero-img.png'
 import About from './HomeComponent/About';
-
+import scottImg from '../assets/images/scott.png'
 
 
 
@@ -19,7 +19,7 @@ const Home = () => {
                 <Col lg='5'>
                     <div className="hero__content">
                         <h1 className='mt-5'>We offer the best traveling experience.</h1>
-                        <Button className="hero__btn btn primary__btn mt-3"><Link to='/scott'>Let's get started</Link></Button>
+                        <Button className="hero__btn secondary__btn mt-3"><Link to='/scott'>Let's get started</Link></Button>
                     </div>
                 </Col>
 
@@ -38,6 +38,23 @@ const Home = () => {
     {/* About end */}
 
     {/* Scott start */}
+    <section className='scott '>
+        <Container>
+            <Row>
+                <Col className='d-flex align-items-center flex-column'>
+                    <div className="scott__img d-flex align-items-center">
+                        <img src={scottImg} alt="" />
+                    </div>
+                    <div className="scott__wrapper d-flex align-items-center justify-content-center gap-5 mt-5">
+                        <div className="scott__wrapper-title">
+                            <p>Traveling is an open experience, so feel free to tell <span>Scott</span> about your interests, maybe he will bring a <span>surprise</span>.</p>
+                        </div>
+                        <Button className="scott__wrapper-btn secondary__btn d-flex align-items-center justify-content-center"><i class="ri-sun-line"></i></Button>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
+    </section>
     {/* Scott end */}
 
     {/* Selected tours start */}
