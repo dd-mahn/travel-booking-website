@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 
 import heroImg from '../assets/images/hero-img.png'
 import About from './HomeComponent/About';
+import FeaturedTourList from './HomeComponent/FeaturedTourList';
 import scottImg from '../assets/images/scott.png'
 
 
@@ -58,6 +59,18 @@ const Home = () => {
     {/* Scott end */}
 
     {/* Selected tours start */}
+    <section className="featuredTour">
+        <Container>
+            <Row className=''>
+                <FeaturedTourList />
+                <Col lg='5' className='featuredTour__wrapper mt-4'>
+                    <h1 className="featuredTour__wrapper-title mb-2">Our featured Tours</h1>
+                    <p className="featuredTour__wrapper-desc">These tours were selected by most of our customers. They contain detailed schedule, qualified places, hotels, restaurants... which will be great experience for you.</p>
+                    <Button className='featuredTour__wrapper-btn primary__btn mt-2'><Link to='/tour'>See more</Link></Button>
+                </Col>
+            </Row>
+        </Container>
+    </section>
     {/* Selected tours end */}
 
     {/* Galerry start */}
@@ -65,6 +78,9 @@ const Home = () => {
 
     {/* Community start */}
     {/* Community end */}
+
+    {/* Contact start */}
+    {/* Contact end */}
 
     </>
   )
