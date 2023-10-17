@@ -79,8 +79,14 @@
 .scott{
     background-color: #333333;
 }
+
 .scott__img img{
     width: 30vw;
+    transition: .3s;
+}
+
+.scott__img img:hover{
+    scale:1.1;
 }
 
 .scott__wrapper{
@@ -109,4 +115,28 @@
     padding: 0 2rem;
     border-radius: 50px !important;
     font-size: 2rem !important;
+}
+
+
+/* Featured tours section */
+.featuredTour__wrapper{
+    margin-left: 2rem;
+}
+.featuredTour__wrapper-title{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.featuredTour__wrapper-desc{
+    color: var(--text-color-dark);
+    font-size: 1.2rem;
+}
+
+.featuredTour__wrapper-btn.secondary__btn{
+    padding: .5rem 2rem !important;
+}
+
+.search__title{
+    font-size: 1.5rem;
+    text-align: center;
 }
