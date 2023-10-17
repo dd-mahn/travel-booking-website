@@ -3,10 +3,13 @@ import '../styles/home.css'
 import { Container, Row, Col, Button } from 'reactstrap'
 import { Link } from 'react-router-dom'
 
-import heroImg from '../assets/images/hero-img.png'
+
 import About from './HomeComponent/About';
 import FeaturedTourList from './HomeComponent/FeaturedTourList';
+import SearchBar from '../shared/SearchBar';
+
 import scottImg from '../assets/images/scott.png'
+import heroImg from '../assets/images/hero-img.png'
 
 
 
@@ -61,12 +64,16 @@ const Home = () => {
     {/* Selected tours start */}
     <section className="featuredTour">
         <Container>
-            <Row className=''>
+            <Row>
+                <h1 className='search__title'>If you know where you are going, check out our tours!</h1>
+            </Row>
+            <SearchBar />
+            <Row className='mt-5'>
                 <FeaturedTourList />
                 <Col lg='5' className='featuredTour__wrapper mt-4'>
                     <h1 className="featuredTour__wrapper-title mb-2">Our featured Tours</h1>
                     <p className="featuredTour__wrapper-desc">These tours were selected by most of our customers. They contain detailed schedule, qualified places, hotels, restaurants... which will be great experience for you.</p>
-                    <Button className='featuredTour__wrapper-btn primary__btn mt-2'><Link to='/tour'>See more</Link></Button>
+                    <Button className='featuredTour__wrapper-btn secondary__btn mt-2'><Link to='/tour'>See more</Link></Button>
                 </Col>
             </Row>
         </Container>
