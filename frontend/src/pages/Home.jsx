@@ -8,6 +8,7 @@ import About from './HomeComponent/About';
 import FeaturedTourList from './HomeComponent/FeaturedTourList';
 import SearchBar from '../shared/SearchBar';
 import MasonryImagesGallery from './HomeComponent/MasonryImagesGallery';
+import Community from './HomeComponent/Community';
 
 import scottImg from '../assets/images/scott.png'
 import heroImg from '../assets/images/hero-img.png'
@@ -100,7 +101,7 @@ const Home = () => {
                 <Col lg='12'>
                     
                     <MasonryImagesGallery />
-                    <h1 className="gallery__title mt-5">Come, <span>"Live"</span> with us - Enjoy every moment.</h1>
+                    {/* <h1 className="gallery__title mt-5">Come, <span>"Live"</span> with us - Enjoy every moment.</h1> */}
                 </Col>
             </Row>
         </Container>
@@ -108,6 +109,7 @@ const Home = () => {
     {/* Galerry end */}
 
     {/* Community start */}
+    <Community />
     {/* Community end */}
 
     {/* Contact start */}
