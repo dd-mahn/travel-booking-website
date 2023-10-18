@@ -27,8 +27,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 a{
-    text-decoration: none;
-    height: auto;
+    text-decoration: none !important;
+    height: auto !important;
 
 }
 
@@ -37,6 +37,11 @@ a{
     border: none !important;
     border-radius: 50px !important;
     padding: 0.4rem 1.5rem !important;
+    color: #fff;
+}
+
+.btn, .btn-secondary{
+    transition: 0.3s !important;
 }
   
 .primary__btn a {
@@ -45,7 +50,13 @@ a{
     color: #fff;
     font-weight: 600;
 }
-.primary__btn a:hover {
+
+.primary__btn a:hover{
+    color: inherit;
+}
+
+.primary__btn:hover {
+    opacity: 0.8;
     color: inherit;
 }
 .secondary__btn {
@@ -59,10 +70,15 @@ a{
 .secondary__btn a {
     text-decoration: none;
     font-size: 1.1rem;
-    color: var(--heading-color);
+    color: var(--primary-color);
 }
 
-.secondary__btn a:hover {
+.secondary__btn a:hover{
+    color:inherit;
+}
+
+.secondary__btn:hover {
+    opacity: 0.8;
     color: inherit;
 }
 
