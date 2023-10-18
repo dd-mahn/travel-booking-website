@@ -145,7 +145,7 @@
 .quote{
     background: var(--primary-color) ;
     color: var(--text-color-light);
-    padding: 7rem 0;
+    padding-top: 5rem ;
 }
 
 .quote h1{
@@ -158,14 +158,16 @@
     color: var(--secondary-color);
 }
 
-/* Gallery section start */
+/* Gallery section */
 
 .gallery{
-    margin-top: 3rem;
+    background: var(--primary-color);
+    padding:3rem 0;
 }
 
 .gallery__title{
     font-weight: bold;
+    font-size: 1.9rem;
 }
 
 .gallery__title span{
@@ -174,8 +176,36 @@
 
 .masonry__img{
     transition: .3s;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
 
 .masonry__img:hover{
     scale: 1.1;
+}
+
+/* Community section */
+.community{
+    background: #333333;
+    color: var(--text-color-light);
+    padding: 5rem 0;
+
+}
+
+.community__title{
+    font-size: 3rem;
+    color: var(--text-color-light);
+    font-weight: bold;
+}
+
+.community__img img{
+    width: 100%;
+}
+
+.community__carousel-item p{
+    font-size: 1.2rem;
+}
+
+.community__carousel-item h6{
+    font-size: 1.3rem;
+    font-weight: bold;
 }
