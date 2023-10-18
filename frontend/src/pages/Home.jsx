@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import About from './HomeComponent/About';
 import FeaturedTourList from './HomeComponent/FeaturedTourList';
 import SearchBar from '../shared/SearchBar';
+import MasonryImagesGallery from './HomeComponent/MasonryImagesGallery';
 
 import scottImg from '../assets/images/scott.png'
 import heroImg from '../assets/images/hero-img.png'
@@ -65,7 +66,7 @@ const Home = () => {
     <section className="featuredTour">
         <Container>
             <Row>
-                <h1 className='search__title'>If you know where you are going, check out our tours!</h1>
+                {/* <h1 className='search__title'>If you know where you are going, check out our tours!</h1> */}
             </Row>
             <SearchBar />
             <Row className='mt-5'>
@@ -80,7 +81,30 @@ const Home = () => {
     </section>
     {/* Selected tours end */}
 
+    {/* Quote section start */}
+    <section className='quote'>
+        <Container>
+            <Row>
+                <Col className='d-flex align-items-center justify-content-center'>
+                <h1>“To Travel is to Live.” – <span>Hans Christian Andersen</span></h1>
+                </Col>
+            </Row>
+        </Container>
+    </section>
+    {/* Quote section start */}
+
     {/* Galerry start */}
+    <section className='gallery'>
+        <Container>
+            <Row>
+                <Col lg='12'>
+                    
+                    <MasonryImagesGallery />
+                    <h1 className="gallery__title mt-5">Come, <span>"Live"</span> with us - Enjoy every moment.</h1>
+                </Col>
+            </Row>
+        </Container>
+    </section>
     {/* Galerry end */}
 
     {/* Community start */}
