@@ -1,12 +1,13 @@
 .tour__img img{
     width: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0px 0px;
     height: 30vh;
 }
 
 .card{
     border: none !important;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    border-radius: 20px !important;
 }
 
 .tour__img{
@@ -23,7 +24,7 @@
     background: var(--secondary-color);
     color: var(--primary-color);
     padding: 0.3em 0.5rem;
-    border-radius: 3px 0 0 0;
+    border-radius: 10px 0 0 0;
 
 }
 
@@ -32,14 +33,14 @@
 }
 
 .tour__rating{
-    font-size: .9rem;
+    font-size: .95rem;
     color: var(--text-color-dark);
 }
 
 .tour__location{
     font-weight: 500;
     color: var(--text-color-dark);
-    font-size: .9rem;
+    font-size: .95rem;
 }
 
 .tour__rating i,
@@ -49,7 +50,7 @@
 
 .tour__title{
     margin-top: 1rem;
-    font-size: .9rem;
+    font-size: .95rem;
     cursor: pointer;
 }
 
@@ -86,7 +87,7 @@
 
 .booking__btn a{
     text-decoration: none;
-    font-size: .9rem;
+    font-size: .95rem;
     color: #fff;
 }
 
