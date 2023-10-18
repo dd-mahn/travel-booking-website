@@ -3,6 +3,8 @@ import tourImg02 from '../images/tour-02.jpg'
 import tourImg03 from '../images/tour-03.jpg'
 import tourImg04 from '../images/tour-04.jpg'
 import tourImg05 from '../images/tour-05.jpg'
+import tourImg06 from '../images/tour-06.jpg'
+
 
 const tours = [
   {
@@ -54,6 +56,14 @@ const tours = [
         name: "jhon doe",
         rating: 4.6,
       },
+      {
+        name: "jhon doe",
+        rating: 3.0,
+      },
+      {
+        name: "jhon doe",
+        rating: 4.0,
+      },
     ],
     avgRating: 4.5,
     photo: tourImg03,
@@ -97,7 +107,29 @@ const tours = [
     ],
     avgRating: 4.5,
     photo: tourImg05,
-    featured: false,
+    featured: true,
+  },
+  {
+    id: "06",
+    title: "Moc Chau, Vietnam",
+    country: "Vietnam",
+    distance: 500,
+    price: 99,
+    maxGroupSize: 8,
+    desc: "this is the description",
+    reviews: [
+      {
+        name: "jhon doe",
+        rating: 4.6,
+      },
+      {
+        name: "jhon doe",
+        rating: 2.0,
+      },
+    ],
+    avgRating: 4.5,
+    photo: tourImg06,
+    featured: true,
   },
 ];
 
