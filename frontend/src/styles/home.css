@@ -162,7 +162,7 @@
 
 .gallery{
     background: var(--primary-color);
-    padding:3rem 0;
+    padding:3rem 0 6rem;
 }
 
 .gallery__title{
