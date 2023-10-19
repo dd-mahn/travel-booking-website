@@ -14,12 +14,10 @@ const Community = () => {
         infinite:true,
         autoplay: true,
         speed:1000,
-        // swipeToSlide:true,
+        swipeToSlide:true,
         arrows:false,
         autoplaySpeed:4000,
-        slidesToShow: 3,
-        vertical: true,
-        verticalSwiping: true,
+        slidesToShow: 1,
         adaptiveHeight:true,
         variableHeight:false,
         // centerMode: true,
@@ -53,7 +51,7 @@ const Community = () => {
                     <h1 className='community__title'>They said</h1>
                     <Slider {...settings} className='community__carousel mt-5'>
                         <div className="community__carousel-item py-3">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, saepe dignissimos accusantium rerum culpa atque nam reiciendis fuga vero similique, esse officiis alias commodi quae eius vel incidunt voluptatem sed.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, saepe dignissimos accusantium rerum culpa atque nam reiciendis fuga vero similique.</p>
                             <div className="d-flex align-items-center gap-4 mt-3">
                                 <img src={ava01} className='w-25 h-25 rounded-2' alt="" />
                                 <div>
@@ -63,7 +61,7 @@ const Community = () => {
                             </div>
                         </div>
                         <div className="community__carousel-item py-3">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, saepe dignissimos accusantium rerum culpa atque nam reiciendis fuga vero similique, esse officiis alias commodi quae eius vel incidunt voluptatem sed.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, saepe dignissimos accusantium rerum culpa atque nam reiciendis fuga vero similique.</p>
                             <div className="d-flex align-items-center gap-4 mt-3">
                                 <img src={ava02} className='w-25 h-25 rounded-2' alt="" />
                                 <div>
@@ -73,7 +71,7 @@ const Community = () => {
                             </div>
                         </div>
                         <div className="community__carousel-item py-3">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, saepe dignissimos accusantium rerum culpa atque nam reiciendis fuga vero similique, esse officiis alias commodi quae eius vel incidunt voluptatem sed.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, saepe dignissimos accusantium rerum culpa atque nam reiciendis fuga vero similique.</p>
                             <div className="d-flex align-items-center gap-4 mt-3">
                                 <img src={ava03} className='w-25 h-25 rounded-2' alt="" />
                                 <div>
@@ -83,7 +81,7 @@ const Community = () => {
                             </div>
                         </div>
                         <div className="community__carousel-item py-3">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, saepe dignissimos accusantium rerum culpa atque nam reiciendis fuga vero similique, esse officiis alias commodi quae eius vel incidunt voluptatem sed.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, saepe dignissimos accusantium rerum culpa atque nam reiciendis fuga vero similique.</p>
                             <div className="d-flex align-items-center gap-4 mt-3">
                                 <img src={ava02} className='w-25 h-25 rounded-2' alt="" />
                                 <div>
