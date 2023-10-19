@@ -14,9 +14,9 @@ const About = () => {
         infinite:true,
         autoplay: true,
         speed:1000,
-        swipeToSlide:true,
         autoplaySpeed:4000,
         slidesToShow: 1,
+        vertical:true,
         // centerMode: true,
         // variableWidth: true,
 
@@ -68,7 +68,7 @@ const About = () => {
                   <ul className="wrapper__list">
                       <li className="wrapper__list-item d-flex align-items-center gap-4 mt-4 about__on-display">
                           <i class="ri-star-line"></i>
-                          <h6>Meet Scott - our new AI guide that will help you along creating your dream trip.</h6>
+                          <h6>Meet Scott - our guide that will help you along creating your dream trip.</h6>
                       </li>
                       <li className="wrapper__list-item d-flex align-items-center gap-4 mt-4 about__on-display">
                           <i class="ri-equalizer-line"></i>
