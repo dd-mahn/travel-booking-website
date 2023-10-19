@@ -9,6 +9,7 @@ import FeaturedTourList from './HomeComponent/FeaturedTourList';
 import SearchBar from '../shared/SearchBar';
 import MasonryImagesGallery from './HomeComponent/MasonryImagesGallery';
 import Community from './HomeComponent/Community';
+import Newsletter from '../shared/Newsletter';
 
 import scottImg from '../assets/images/scott.png'
 import heroImg from '../assets/images/hero-img.png'
@@ -112,8 +113,9 @@ const Home = () => {
     <Community />
     {/* Community end */}
 
-    {/* Contact start */}
-    {/* Contact end */}
+    {/* Newsletter start */}
+    <Newsletter />
+    {/* Newsletter end */}
 
     </>
   )
