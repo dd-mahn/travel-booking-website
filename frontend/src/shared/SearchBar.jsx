@@ -20,7 +20,7 @@ const SearchBar = () => {
 
   return(
     <div className="search__bar">
-        <Form className='d-flex align-items-center gap-5'>
+        <Form className='search__form d-flex align-items-center gap-5'>
             <FormGroup className='d-flex align-items-center gap-3 form__group form__group-fast'>
                 <span><i class="ri-map-pin-line"></i></span>
                 <div>
