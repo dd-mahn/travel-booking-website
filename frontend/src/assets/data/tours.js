@@ -4,6 +4,10 @@ import tourImg03 from '../images/tour-03.jpg'
 import tourImg04 from '../images/tour-04.jpg'
 import tourImg05 from '../images/tour-05.jpg'
 import tourImg06 from '../images/tour-06.jpg'
+import tourImg07 from '../images/tour-07.jpg'
+import tourImg08 from '../images/tour-08.jpg'
+import tourImg09 from '../images/tour-09.jpg'
+
 
 
 const tours = [
@@ -17,7 +21,7 @@ const tours = [
     desc: "this is the description",
     reviews: [
       {
-        name: "jhon doe",
+        name: "Mr A",
         rating: 4.6,
       },
     ],
@@ -35,7 +39,7 @@ const tours = [
     desc: "this is the description",
     reviews: [
       {
-        name: "jhon doe",
+        name: "Mr A",
         rating: 4.6,
       },
     ],
@@ -53,15 +57,15 @@ const tours = [
     desc: "this is the description",
     reviews: [
       {
-        name: "jhon doe",
+        name: "Mr A",
         rating: 4.6,
       },
       {
-        name: "jhon doe",
+        name: "Mr A",
         rating: 3.0,
       },
       {
-        name: "jhon doe",
+        name: "Mr A",
         rating: 4.0,
       },
     ],
@@ -79,7 +83,7 @@ const tours = [
     desc: "this is the description",
     reviews: [
       {
-        name: "jhon doe",
+        name: "Mr A",
         rating: 4.6,
       },
     ],
@@ -97,11 +101,11 @@ const tours = [
     desc: "this is the description",
     reviews: [
       {
-        name: "jhon doe",
+        name: "Mr A",
         rating: 4.6,
       },
       {
-        name: "jhon doe",
+        name: "Mr A",
         rating: 2.0,
       },
     ],
@@ -119,16 +123,82 @@ const tours = [
     desc: "this is the description",
     reviews: [
       {
-        name: "jhon doe",
+        name: "Mr A",
         rating: 4.6,
       },
       {
-        name: "jhon doe",
+        name: "Mr A",
         rating: 2.0,
       },
     ],
     avgRating: 4.5,
     photo: tourImg06,
+    featured: true,
+  },
+  {
+    id: "07",
+    title: "Hue, Vietnam",
+    country: "Vietnam",
+    distance: 500,
+    price: 99,
+    maxGroupSize: 8,
+    desc: "this is the description",
+    reviews: [
+      {
+        name: "Mr A",
+        rating: 4.6,
+      },
+      {
+        name: "Mr A",
+        rating: 2.0,
+      },
+    ],
+    avgRating: 4.5,
+    photo: tourImg07,
+    featured: true,
+  },
+  {
+    id: "08",
+    title: "Nha Trang, Vietnam",
+    country: "Vietnam",
+    distance: 500,
+    price: 99,
+    maxGroupSize: 8,
+    desc: "this is the description",
+    reviews: [
+      {
+        name: "Mr A",
+        rating: 4.6,
+      },
+      {
+        name: "Mr A",
+        rating: 2.0,
+      },
+    ],
+    avgRating: 4.5,
+    photo: tourImg08,
+    featured: true,
+  },
+  {
+    id: "09",
+    title: "Ninh Binh, Vietnam",
+    country: "Vietnam",
+    distance: 500,
+    price: 99,
+    maxGroupSize: 8,
+    desc: "this is the description",
+    reviews: [
+      {
+        name: "Mr A",
+        rating: 4.6,
+      },
+      {
+        name: "Mr A",
+        rating: 2.0,
+      },
+    ],
+    avgRating: 4.5,
+    photo: tourImg09,
     featured: true,
   },
 ];
