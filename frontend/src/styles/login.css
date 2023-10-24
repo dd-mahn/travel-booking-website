@@ -1,0 +1,56 @@
+.login__img img{
+    width: 80%;
+}
+
+.login__container{
+    
+}
+
+.login__form{
+    padding: 1rem 4rem;
+    height: 50vh;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+}
+
+.login__form h2{
+    font-weight: bold;
+    color: var(--text-color-dark);
+    align-self: start;
+}
+
+.login__form form{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login__form input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 20px;
+    border:none;
+    border:1px solid var(--primary-color);
+    margin-top: .5rem;
+}
+
+.login__form input:focus{
+    outline: none;
+}
+
+.auth__btn.primary__btn{
+    margin-top: 1rem;
+    width: 60%;
+    font-weight: bold;
+}
+
+.login__form p{
+    margin-top: 1rem;
+}
+
+.login__form p a{
+    color: var(--secondary-color);
+}
