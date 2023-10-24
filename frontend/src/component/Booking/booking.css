@@ -1,26 +1,28 @@
 .booking{
+    background: #333333;
     padding: 2rem;
-    border-radius: .5rem;
-    border: 1px solid rgb(229, 231, 235);
+    border-radius: 20px;
     position: sticky;
     top:80px;
+    
 }
 
 .booking__top h3{
     font-size: 2rem;
     font-weight: 700;
+    color: var(--text-color-light);
 }
 
 .booking__top h3 span{
     font-size: 1.1rem;
     font-weight: 400;
-    color:var(--text-color)
+    color: var(--text-color-light) !important;
 }
 
 .booking__top span{
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--text-color);
+    color: var(--text-color-light) !important;
 }
 
 .booking__top span i{
@@ -29,7 +31,7 @@
 
 .booking__top{
     padding-bottom: 2rem;
-    border-bottom: 1px solid rgb(229, 231, 235);
+    border-bottom: 1px solid #fff;
 }
 
 .booking__form{
@@ -37,18 +39,22 @@
 }
 
 .booking__form h5{
-    margin-bottom: 1rem;
+    color: var(--text-color-light);
 }
 
 .booking__form input{
     width: 100%;
     padding: 0.5rem;
-    border-radius: .5rem;
-    color: var(--heading-color);
+    color: var(--text-color-light);
+    background:#333333;
     font-size: 1rem;
     border:none;
-    border-bottom: 1px solid rgb(229, 231, 235);
+    border-bottom: 1px solid #fff;
     
+}
+
+.booking__form input::placeholder{
+    color: var(--text-color-light);
 }
 
 .booking__form input:focus{
@@ -56,8 +62,10 @@
 }
 
 .booking__info-form{
-    padding: 1rem;
-    border: 1px solid rgb(229, 231, 235);
+    margin-top: 1rem;
+    padding: 1rem 1rem .2rem;
+    border-radius: 20px;
+    border: 1px solid #fff;
 }
 
 .booking__bottom li{
@@ -68,16 +76,22 @@
 
 .booking__bottom li h5, .booking__bottom li span{
     font-size: 1rem;
-    color: var(--text-color);
+    color: var(--text-color-light);
     font-weight: 500;
+    background: #333333;
 }
 
 .booking__bottom{
+    background: #333333;
     margin-top: 1rem;
 }
 
+.booking__bottom li{
+    background: #333333;
+}
+
 .total h5, .total span{
-    color:var(--heading-color) !important;
+    color:var(--text-color-light) !important;
     font-weight: 700 !important;
     font-size: 1.1rem !important; 
 }
