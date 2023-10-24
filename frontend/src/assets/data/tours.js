@@ -14,7 +14,8 @@ const tours = [
   {
     id: "01",
     title: "Ha Giang, Vietnam",
-    country: "Vietnam",
+    city: "A city in Vietnam",
+    address: "Somewhere in Vietnam",
     distance: 300,
     price: 99,
     maxGroupSize: 10,
@@ -32,7 +33,8 @@ const tours = [
   {
     id: "02",
     title: "Hoi An, Vietnam",
-    country: "Vietnam",
+    city: "A city in Vietnam",
+    address: "Somewhere in Vietnam",
     distance: 400,
     price: 99,
     maxGroupSize: 8,
@@ -50,7 +52,8 @@ const tours = [
   {
     id: "03",
     title: "Ha Long, Vietnam",
-    country: "Vietnam",
+    city: "A city in Vietnam",
+    address: "Somewhere in Vietnam",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -76,7 +79,8 @@ const tours = [
   {
     id: "04",
     title: "Hanoi, Vietnam",
-    country: "Vietnam",
+    city: "A city in Vietnam",
+    address: "Somewhere in Vietnam",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -94,7 +98,8 @@ const tours = [
   {
     id: "05",
     title: "Da Lat, Vietnam",
-    country: "Vietnam",
+    city: "A city in Vietnam",
+    address: "Somewhere in Vietnam",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -116,7 +121,8 @@ const tours = [
   {
     id: "06",
     title: "Moc Chau, Vietnam",
-    country: "Vietnam",
+    city: "A city in Vietnam",
+    address: "Somewhere in Vietnam",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -138,7 +144,8 @@ const tours = [
   {
     id: "07",
     title: "Hue, Vietnam",
-    country: "Vietnam",
+    city: "A city in Vietnam",
+    address: "Somewhere in Vietnam",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -160,7 +167,8 @@ const tours = [
   {
     id: "08",
     title: "Nha Trang, Vietnam",
-    country: "Vietnam",
+    city: "A city in Vietnam",
+    address: "Somewhere in Vietnam",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -182,7 +190,8 @@ const tours = [
   {
     id: "09",
     title: "Ninh Binh, Vietnam",
-    country: "Vietnam",
+    city: "A city in Vietnam",
+    address: "Somewhere in Vietnam",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
