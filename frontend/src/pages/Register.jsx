@@ -21,7 +21,7 @@ const Login = () => {
   }
   return <section>
     <Container>
-      <Row>
+      <Row className='mb-5'>
         <Col lg='6'>
           <div className="login__img d-flex align-items-center justify-content-center">
             <img src={registerImg} alt="" />
