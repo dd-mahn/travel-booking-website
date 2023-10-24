@@ -43,7 +43,7 @@ const TourDetails = () => {
                 <div className="tour__info">
                   <h2>{title}</h2>
 
-                  <div className='d-flex align-items-center gap-5'>
+                  <div className='tour__info-item d-flex align-items-center gap-5'>
 
                     <span className="tour__rating d-flex align-items-center gap-1">
                       <i class="ri-star-fill" style={{'color':'var(--secondary-color'}}></i> {avgRating === 0 ? null : avgRating}
@@ -82,7 +82,7 @@ const TourDetails = () => {
 
                     <div className="reviews__input">
                       <input type="text" ref={reviewMsgRef} placeholder='Share your thought' />
-                      <button className="btn primary__btn text-white" type='submit'>Submit</button>
+                      <button className="primary__btn text-white" type='submit'>Submit</button>
                     </div>
                   </Form>
                   
