@@ -14,7 +14,7 @@ const tours = [
   {
     id: "01",
     title: "Ha Giang, Vietnam",
-    city: "A city in Vietnam",
+    city: "A city",
     address: "Somewhere in Vietnam",
     distance: 300,
     price: 99,
@@ -33,7 +33,7 @@ const tours = [
   {
     id: "02",
     title: "Hoi An, Vietnam",
-    city: "A city in Vietnam",
+    city: "A city",
     address: "Somewhere in Vietnam",
     distance: 400,
     price: 99,
@@ -52,7 +52,7 @@ const tours = [
   {
     id: "03",
     title: "Ha Long, Vietnam",
-    city: "A city in Vietnam",
+    city: "A city",
     address: "Somewhere in Vietnam",
     distance: 500,
     price: 99,
@@ -79,7 +79,7 @@ const tours = [
   {
     id: "04",
     title: "Hanoi, Vietnam",
-    city: "A city in Vietnam",
+    city: "A city",
     address: "Somewhere in Vietnam",
     distance: 500,
     price: 99,
@@ -98,7 +98,7 @@ const tours = [
   {
     id: "05",
     title: "Da Lat, Vietnam",
-    city: "A city in Vietnam",
+    city: "A city",
     address: "Somewhere in Vietnam",
     distance: 500,
     price: 99,
@@ -121,7 +121,7 @@ const tours = [
   {
     id: "06",
     title: "Moc Chau, Vietnam",
-    city: "A city in Vietnam",
+    city: "A city",
     address: "Somewhere in Vietnam",
     distance: 500,
     price: 99,
@@ -144,7 +144,7 @@ const tours = [
   {
     id: "07",
     title: "Hue, Vietnam",
-    city: "A city in Vietnam",
+    city: "A city",
     address: "Somewhere in Vietnam",
     distance: 500,
     price: 99,
@@ -167,7 +167,7 @@ const tours = [
   {
     id: "08",
     title: "Nha Trang, Vietnam",
-    city: "A city in Vietnam",
+    city: "A city",
     address: "Somewhere in Vietnam",
     distance: 500,
     price: 99,
@@ -190,7 +190,7 @@ const tours = [
   {
     id: "09",
     title: "Ninh Binh, Vietnam",
-    city: "A city in Vietnam",
+    city: "A city",
     address: "Somewhere in Vietnam",
     distance: 500,
     price: 99,
