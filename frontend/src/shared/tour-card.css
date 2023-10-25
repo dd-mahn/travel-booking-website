@@ -41,6 +41,10 @@
     font-weight: 500;
     color: var(--text-color-dark);
     font-size: .95rem;
+    margin-right: .5rem;
+}
+.tour__rating i{
+    color: var(--secondary-color) !important;
 }
 
 .tour__rating i,
