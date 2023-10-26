@@ -1,7 +1,7 @@
 [
   {
-    "title": "Ha Giang, Vietnam",
-    "city": "A city",
+    "title": "Wonderful Nature - Ha Giang, Vietnam",
+    "city": "Ha Giang",
     "address": "Somewhere in Vietnam",
     "distance": 300,
     "price": 99,
@@ -13,8 +13,8 @@
     "featured": true
   },
   {
-    "title": "Hoi An, Vietnam",
-    "city": "A city",
+    "title": "Nostalgic Feeling - Hoi An, Vietnam",
+    "city": "Hoi An",
     "address": "Somewhere in Vietnam",
     "distance": 400,
     "price": 99,
@@ -26,8 +26,8 @@
     "featured": true
   },
   {
-    "title": "Ha Long, Vietnam",
-    "city": "A city",
+    "title": "International Heritage Ha Long Bay, Vietnam",
+    "city": "Ha Long",
     "address": "Somewhere in Vietnam",
     "distance": 500,
     "price": 99,
@@ -39,8 +39,8 @@
     "featured": true
   },
   {
-    "title": "Hanoi, Vietnam",
-    "city": "A city",
+    "title": "Capital Hanoi, Vietnam",
+    "city": "Hanoi",
     "address": "Somewhere in Vietnam",
     "distance": 500,
     "price": 99,
@@ -52,8 +52,8 @@
     "featured": true
   },
   {
-    "title": "Da Lat, Vietnam",
-    "city": "A city",
+    "title": "Freezing in Da Lat, Vietnam",
+    "city": "Da Lat",
     "address": "Somewhere in Vietnam",
     "distance": 500,
     "price": 99,
@@ -65,8 +65,8 @@
     "featured": true
   },
   {
-    "title": "Moc Chau, Vietnam",
-    "city": "A city",
+    "title": "Wonderful Nature - Moc Chau, Vietnam",
+    "city": "Moc Chau",
     "address": "Somewhere in Vietnam",
     "distance": 500,
     "price": 99,
@@ -78,8 +78,8 @@
     "featured": true
   },
   {
-    "title": "Hue, Vietnam",
-    "city": "A city",
+    "title": "Ancient - Hue, Vietnam",
+    "city": "Hue",
     "address": "Somewhere in Vietnam",
     "distance": 500,
     "price": 99,
@@ -91,8 +91,8 @@
     "featured": true
   },
   {
-    "title": "Nha Trang, Vietnam",
-    "city": "A city",
+    "title": "Beutiful Beach - Nha Trang, Vietnam",
+    "city": "Nha Trang",
     "address": "Somewhere in Vietnam",
     "distance": 500,
     "price": 99,
@@ -104,8 +104,8 @@
     "featured": true
   },
   {
-    "title": "Ninh Binh, Vietnam",
-    "city": "A city",
+    "title": "Popular Skull Island - Ninh Binh, Vietnam",
+    "city": "Ninh Binh",
     "address": "Somewhere in Vietnam",
     "distance": 500,
     "price": 99,
