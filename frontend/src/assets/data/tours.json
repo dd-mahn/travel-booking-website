@@ -1,7 +1,7 @@
 [
   {
     "title": "Ha Giang, Vietnam",
-    "country": "Vietnam",
+    "city": "A city",
     "address": "Somewhere in Vietnam",
     "distance": 300,
     "price": 99,
@@ -14,7 +14,7 @@
   },
   {
     "title": "Hoi An, Vietnam",
-    "country": "Vietnam",
+    "city": "A city",
     "address": "Somewhere in Vietnam",
     "distance": 400,
     "price": 99,
@@ -27,7 +27,7 @@
   },
   {
     "title": "Ha Long, Vietnam",
-    "country": "Vietnam",
+    "city": "A city",
     "address": "Somewhere in Vietnam",
     "distance": 500,
     "price": 99,
@@ -40,7 +40,7 @@
   },
   {
     "title": "Hanoi, Vietnam",
-    "country": "Vietnam",
+    "city": "A city",
     "address": "Somewhere in Vietnam",
     "distance": 500,
     "price": 99,
@@ -53,7 +53,7 @@
   },
   {
     "title": "Da Lat, Vietnam",
-    "country": "Vietnam",
+    "city": "A city",
     "address": "Somewhere in Vietnam",
     "distance": 500,
     "price": 99,
@@ -65,8 +65,8 @@
     "featured": true
   },
   {
-    "title": "Cherry Blossoms Spring",
-    "country": "Vietnam",
+    "title": "Moc Chau, Vietnam",
+    "city": "A city",
     "address": "Somewhere in Vietnam",
     "distance": 500,
     "price": 99,
@@ -75,6 +75,45 @@
     "reviews": [],
 
     "photo": "/tour-images/tour-img06.jpg",
+    "featured": true
+  },
+  {
+    "title": "Hue, Vietnam",
+    "city": "A city",
+    "address": "Somewhere in Vietnam",
+    "distance": 500,
+    "price": 99,
+    "maxGroupSize": 8,
+    "desc": "this is the description",
+    "reviews": [],
+
+    "photo": "/tour-images/tour-img07.jpg",
+    "featured": true
+  },
+  {
+    "title": "Nha Trang, Vietnam",
+    "city": "A city",
+    "address": "Somewhere in Vietnam",
+    "distance": 500,
+    "price": 99,
+    "maxGroupSize": 8,
+    "desc": "this is the description",
+    "reviews": [],
+
+    "photo": "/tour-images/tour-img08.jpg",
+    "featured": true
+  },
+  {
+    "title": "Ninh Binh, Vietnam",
+    "city": "A city",
+    "address": "Somewhere in Vietnam",
+    "distance": 500,
+    "price": 99,
+    "maxGroupSize": 8,
+    "desc": "this is the description",
+    "reviews": [],
+
+    "photo": "/tour-images/tour-img09.jpg",
     "featured": true
   }
 ]
