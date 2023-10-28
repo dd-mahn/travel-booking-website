@@ -68,9 +68,8 @@ const Home = () => {
     <section className="featuredTour">
         <Container>
             <Row>
-                {/* <h1 className='search__title'>If you know where you are going, check out our tours!</h1> */}
+                <SearchBar />
             </Row>
-            <SearchBar />
             <Row className='mt-5'>
                 <FeaturedTourList />
                 <Col lg='5' className='featuredTour__wrapper mt-4'>
