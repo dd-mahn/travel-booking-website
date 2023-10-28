@@ -53,7 +53,7 @@
 }
 
 .tour__title{
-    margin-top: 1rem;
+    margin-top: .3rem !important;
     font-size: .95rem;
     cursor: pointer;
 }
