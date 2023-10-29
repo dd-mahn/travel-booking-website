@@ -7,12 +7,18 @@ import cookieParser from "cookie-parser"
 import tourRoute from './routes/tours.js'
 import userRoute from './routes/users.js'
 import authRoute from './routes/auth.js'
+import reviewRoute from './routes/reviews.js'
+
 
 
 
 dotenv.config()
 const app = express()
 const port = process.env.PORT || 8000
+const corsOptions = {
+    origin:true,
+    credentials:true
+}
 
 //connect database
 mongoose.set('strictQuery', false)
@@ -31,11 +37,13 @@ const connect = async()=>{
 
 //middleware
 app.use(express.json())
-app.use(cors())
+app.use(cors(corsOptions))
 app.use(cookieParser())
-app.use('/tours', tourRoute)
-app.use('/users', userRoute)
-app.use('/auth', authRoute)
+app.use('/api/v1/tours', tourRoute)
+app.use('/api/v1/users', userRoute)
+app.use('/api/v1/auth', authRoute)
+app.use('/api/v1/review', reviewRoute)
+
 
 
 
