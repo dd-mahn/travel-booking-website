@@ -68,6 +68,10 @@
     border: 1px solid #fff;
 }
 
+.booking__info-form input[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(0.8);
+}
+
 .booking__bottom li{
     display: flex;
     align-items: center;

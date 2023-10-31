@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './booking.css'
-import { Form, FormGroup, ListGroup, ListGroupItem, Button } from 'reactstrap'
+import { Form, FormGroup, ListGroup, ListGroupItem, Button, Col } from 'reactstrap'
 import { useNavigate } from 'react-router-dom'
 
 const Booking = ({tour, avgRating}) => {
@@ -50,9 +50,13 @@ const Booking = ({tour, avgRating}) => {
             <FormGroup>
                 <input type="number" placeholder='Phone' id='phone' required onClick={handleChange} />
             </FormGroup>
-            <FormGroup className='d-flex align-items-center gap-3'>
+            <FormGroup className='d-flex align-items-center justify-content-between gap-3'>
+                <Col lg='7'>
                 <input type="date" placeholder='' id='bookAt' required onClick={handleChange} />
+                </Col>
+                <Col lg='4'>
                 <input type="number" placeholder='Guest' id='guestSize' required onClick={handleChange} />
+                </Col>
             </FormGroup>
         </Form>
     </div>
@@ -75,7 +79,7 @@ const Booking = ({tour, avgRating}) => {
                 <span> ${totalAmount}</span>
             </ListGroupItem>
 
-            <Button className='btn primary__btn w-100 mt-4' onClick={handleClick}>Book Now</Button>
+            <Button className='secondary__btn w-100 mt-4' onClick={handleClick}>Book Now</Button>
         </ListGroup>
     </div>
   </div>
