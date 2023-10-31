@@ -19,7 +19,7 @@ const Tours = () => {
 
   return (
     <>
-      <CommonSection title={'All Tours'} />
+      <CommonSection title={'All Tours'} color={'var(--primary-color'} />
       <section>
         <Container>
           <Row>
