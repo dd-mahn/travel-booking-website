@@ -7,6 +7,7 @@ import calculateAvgRating from '../utils/avgRating'
 import avatar from '../assets/images/avatar.png'
 import Booking from '../component/Booking/Booking'
 import Newsletter from '../shared/Newsletter'
+import CommonSection from '../shared/CommonSection'
 
 const TourDetails = () => {
   const {id} = useParams()
@@ -43,7 +44,7 @@ const TourDetails = () => {
                 <div className="tour__info">
                   <h2>{title}</h2>
 
-                  <div className='tour__info-item d-flex align-items-center gap-5'>
+                  <div className='tour__info-item d-flex align-items-center gap-3'>
 
                     <span className="tour__rating d-flex align-items-center gap-1">
                       <i class="ri-star-fill" style={{'color':'var(--secondary-color'}}></i> {avgRating === 0 ? null : avgRating}
