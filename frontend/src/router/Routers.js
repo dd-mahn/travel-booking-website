@@ -14,13 +14,14 @@ const Routers = () => {
     <Routes>
         <Route path='/' element={<Navigate to='/Home'/>} />
         <Route path='/home' element={<Home/>}/>
-        <Route path='/tour' element={<Tours/>}/>
+        <Route path='/tours' element={<Tours/>}/>
         <Route path='/scott' element={<Scott/>}/>
-        <Route path='/tour/:id' element={<TourDetails/>}/>
+        <Route path='/tours/:id' element={<TourDetails/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/login' element={<Login/>}/>
-        <Route path='/tour/search' element={<SearchResultList/>}/>
+        <Route path='/tours/search' element={<SearchResultList/>}/>
         <Route path='/thank-you' element={<ThankYou/>}/>
+
 
 
     </Routes>
