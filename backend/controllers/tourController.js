@@ -95,7 +95,7 @@ export const getTourBySearch = async(req,res)=>{
         if(tours.length !== 0){
             res.status(200).json({success:true, message:'Successful', data:tours})
         }else{
-            res.status(404).json({success:false, message:'Not found!'})
+            res.status(200).json({success:false, message:'Not found!', data:tours})
         }       
     } catch (error) {
         res.status(404).json({success:false, message:'Not found!'})
