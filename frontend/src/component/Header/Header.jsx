@@ -14,7 +14,7 @@ const nav__links =[
       display: 'About'
   },
   {
-      path:'/tour',
+      path:'/tours',
       display: 'Tours'
   },
   {
@@ -42,8 +42,8 @@ const Header = () => {
               </div>
               
               <div className="buttons d-flex align-items-center gap-3">
-                <Button className="btn primary__btn login__btn"><Link to='/login'>Login</Link></Button>
-                <Button className="btn primary__btn register__btn"><Link to='/register'>Register</Link></Button>
+                <Button className="primary__btn login__btn"><Link to='/login'>Login</Link></Button>
+                <Button className="primary__btn register__btn"><Link to='/register'>Register</Link></Button>
               </div>
             </div>
         </Row>
