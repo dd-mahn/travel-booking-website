@@ -1,13 +1,14 @@
-import React, {useRef, useState} from 'react'
+import React, {useRef, useState, useEffect} from 'react'
 import '../styles/tour-detail.css'
 import { Container, Row, Col, Form, ListGroup } from 'reactstrap'
 import { useParams } from 'react-router-dom'
-import tourData from '../assets/data/tours'
 import calculateAvgRating from '../utils/avgRating'
 import avatar from '../assets/images/avatar.png'
 import Booking from '../component/Booking/Booking'
 import Newsletter from '../shared/Newsletter'
 import CommonSection from '../shared/CommonSection'
+import useFetch from '../hooks/useFetch.js'
+import { BASE_URL } from '../utils/config'
 
 const TourDetails = () => {
   const {id} = useParams()
@@ -24,7 +25,8 @@ const TourDetails = () => {
     alert(`${reviewText}, ${tourRating}`)
   }
 
-  const tour = tourData.find(tour => tour.id === id)
+  //fetch data from database
+  const {data:tour, loading, error} = useFetch(`${BASE_URL}/tours/${id}`)
 
   const {photo, title, desc, price, reviews, address, city, distance, maxGroupSize} = tour
 
@@ -33,11 +35,19 @@ const TourDetails = () => {
   // Format date
   const option = {day: 'numeric', month: 'long', year: 'numeric'}
 
+  useEffect(()=>{
+    scrollTo(0,0)
+  },[tour])
+
   return (
     <>
       <section>
         <Container>
-          <Row>
+          {loading && <h4 className='text-center pt-5'>Loading...</h4>}
+          {error && <h4 className='text-center pt-5'>{error}</h4>}
+
+          {
+            !loading && !error && <Row>
             <Col lg='8'>
               <div className="tour__content">
                 <img src={photo} alt="" />
@@ -48,7 +58,7 @@ const TourDetails = () => {
 
                     <span className="tour__rating d-flex align-items-center gap-1">
                       <i class="ri-star-fill" style={{'color':'var(--secondary-color'}}></i> {avgRating === 0 ? null : avgRating}
-                      {totalRating === 0 ? 'Not rated':(<span>({reviews.length})</span>)}
+                      {totalRating === 0 ? 'Not rated':(<span>({reviews?.length})</span>)}
                     </span>
 
                     <span>
@@ -123,6 +133,7 @@ const TourDetails = () => {
               <Booking tour={tour} avgRating={avgRating}/>
             </Col>
           </Row>
+          }
         </Container>
       </section>
       <Newsletter/>
