@@ -8,7 +8,7 @@
 
 .login__form{
     padding: 1rem 4rem;
-    height: 50vh;
+    /* height: 50vh; */
     border: 1px solid var(--primary-color);
     border-radius: 20px;
 }
