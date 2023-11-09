@@ -31,7 +31,7 @@ const Login = () => {
           <div className="login__container">
             <div className="login__form d-flex flex-column align-items-center justify-content-center">
               
-              <h2>Login</h2>
+              <h2 className='mt-3'>Login</h2>
 
               <Form onSubmit={handleClick}>
                 <FormGroup className='w-100'>
