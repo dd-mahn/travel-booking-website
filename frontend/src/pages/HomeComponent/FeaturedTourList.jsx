@@ -7,11 +7,6 @@ import { BASE_URL } from '../../utils/config'
 const FeaturedTourList = () => {
   const {data: featuredTours, loading, error} = useFetch(`${BASE_URL}/tours/search/getFeaturedTour`)
 
-  // let FeaturedTourData = []
-  // for(let i = 0; i < 6; i++){
-  //   FeaturedTourData.push(featuredTours[i])
-  // }
-
   return (
     <>
     {loading && <h4>Loading...</h4>}
