@@ -15,7 +15,7 @@ const ThankYou = () => {
                         <h1 className="mb-3 fw-semibold">Thank you</h1>
                         <h3 className="mb-3">Tour booked successfully!</h3>
 
-                        <Button className='primary__btn w-25'><Link to='/home'>Back to home</Link></Button>
+                        <Button className='primary__btn w-25'><Link to='/'>Back to home</Link></Button>
                     </span>
                 </div>
             </Col>
