@@ -59,6 +59,11 @@
     align-items: center;
     color: var(--secondary-color);
     cursor: pointer;
+    transition:.3s;
+}
+
+.rating__group span:hover{
+    color: #a06001;
 }
 
 .tour__reviews h4{
