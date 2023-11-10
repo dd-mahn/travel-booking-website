@@ -41,3 +41,15 @@
     z-index:1;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
+
+.username{
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    padding-left:1rem;
+    border-left: 2px solid var(--primary-color);
+}
+
+.logout__btn{
+    font-weight: 800 !important;
+}
