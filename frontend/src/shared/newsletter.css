@@ -27,13 +27,18 @@
     border-radius: 20px;
     border: 2px solid var(--primary-color);
 }
+.newsletter__input div{
+    margin:0 !important;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+}
 
 .newsletter__input input{
-    padding-left: 1rem;
     border: none;
     font-size: 1rem;
     color: var(--heading-color);
-    width: 70%;
+    width: 100%;
 }
 
 .newsletter__input input:focus{
