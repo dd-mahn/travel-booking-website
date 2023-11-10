@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {useRef, useEffect, useContext} from 'react'
 import './header.css'
 import {Container, Row, Col, Button} from 'reactstrap'
-import {NavLink, Link} from 'react-router-dom'
-
+import {NavLink, Link, useNavigate} from 'react-router-dom'
+import {AuthContext} from '../../context/AuthContext'
 
 const nav__links =[
   {
@@ -23,7 +23,35 @@ const nav__links =[
   }
 ]
 const Header = () => {
-  return <header className='header'>
+  const headerRef = useRef(null)
+
+  const navigate = useNavigate()
+  const {user, dispatch} = useContext(AuthContext)
+
+  const logout = () => {
+    dispatch({type:'LOGOUT'})
+    navigate('/')
+  }
+
+  const stickyHeaderFunc = () => {
+    window.addEventListener('scroll', () => {
+      if(
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ){
+        headerRef.current.classList.add('sticky_header')
+      }else{
+        headerRef.current.classList.remove('sticky_header')
+      }
+    })
+  }
+
+  useEffect(() => {
+    stickyHeaderFunc()
+    return window.addEventListener('scroll', stickyHeaderFunc)
+  })
+
+  return <header className='header' ref={headerRef}>
     <Container>
         <Row>
             <div className="nav__container d-flex align-items-center justify-content-between">
@@ -42,8 +70,18 @@ const Header = () => {
               </div>
               
               <div className="buttons d-flex align-items-center gap-3">
-                <Button className="primary__btn login__btn"><Link to='/login'>Login</Link></Button>
-                <Button className="primary__btn register__btn"><Link to='/register'>Register</Link></Button>
+                {
+                  user?(<>
+                    <h5 className='username mb-0'>{user.username}</h5>
+                    <Button className='logout__btn secondary__btn' onClick={logout}>Logout</Button>
+                  </>
+                  ):(
+                    <>
+                      <Button className="primary__btn login__btn"><Link to='/login'>Login</Link></Button>
+                      <Button className="primary__btn register__btn"><Link to='/register'>Register</Link></Button>
+                    </>
+                  )
+                }                
               </div>
             </div>
         </Row>
