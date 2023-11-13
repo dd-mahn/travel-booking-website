@@ -11,8 +11,27 @@ const Newsletter = () => {
     const handleChange = e => {
         setSubscribe(prev => ({...prev, [e.target.id]:e.target.value}))
     }
-    const handleClick = () => {
+    const handleClick = async e => {
+        try {
+            const res = await fetch(`${BASE_URL}/subscribe`,{
+                method:'post',
+                headers:{
+                    'content-type':'application/json'
+                },
+                body:JSON.stringify(subscribe)
+            })
 
+            const result = await res.json()
+
+            if(!res.ok){
+                return alert(result.message)
+            }else{
+                return alert(result.message)
+            }
+
+        } catch (error) {
+            alert(error.message)
+        }
     }
   return <section className='newsletter'>
     <Container>
