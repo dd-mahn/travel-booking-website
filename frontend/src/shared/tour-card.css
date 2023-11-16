@@ -1,3 +1,6 @@
+.tour__card{
+    min-height: 500px !important;
+}
 .tour__img img{
     width: 100%;
     border-radius: 20px 20px 0px 0px;
@@ -8,6 +11,11 @@
     border: none !important;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
     border-radius: 20px !important;
+}
+
+.card__body{
+    min-height: 180px !important;
+    position: relative;
 }
 
 .tour__img{
@@ -56,6 +64,7 @@
     margin-top: .3rem !important;
     font-size: .95rem;
     cursor: pointer;
+    min-height: 50px !important;
 }
 
 .tour__title a{
@@ -73,7 +82,9 @@
     font-size: 1.1rem;
     font-weight: 700;
 }
-
+.card__bottom{
+    justify-self: end;
+}
 .card__bottom h5 span{
     font-weight: 500;
     color: var(--text-color-dark);
