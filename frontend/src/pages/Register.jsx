@@ -65,7 +65,7 @@ const Register = () => {
                   <input type="email" placeholder='Email' required id='email' onChange={handleChange} />
                 </FormGroup>
                 <FormGroup className='w-100'>
-                  <input type="password" placeholder='Password' required id='password' onChange={handleChange} />
+                  <input type="password" placeholder='Password' required id='password' minLength={8} onChange={handleChange} />
                 </FormGroup>
                 <Button className='primary__btn auth__btn' type='submit' onClick={handleClick}>Register</Button>
               </Form>
