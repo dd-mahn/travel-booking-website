@@ -50,7 +50,7 @@
     font-size:1.1rem !important;
     border-radius: 20px !important;
     transition: .3s !important;
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 .newsletter__btn:hover{
