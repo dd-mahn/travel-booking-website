@@ -75,7 +75,7 @@ const Home = () => {
                 <Col lg='5' className='featuredTour__wrapper mt-4'>
                     <h1 className="featuredTour__wrapper-title mb-2">Our featured Tours</h1>
                     <p className="featuredTour__wrapper-desc">These tours were selected by most of our customers. They contain detailed schedule, qualified places, hotels, restaurants... which will be great experience for you.</p>
-                    <Button className='featuredTour__wrapper-btn secondary__btn mt-2'><Link to='/tour'>See more</Link></Button>
+                    <Button className='featuredTour__wrapper-btn secondary__btn mt-2'><Link to='/tours'>See more</Link></Button>
                 </Col>
             </Row>
         </Container>
