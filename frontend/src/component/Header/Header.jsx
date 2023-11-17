@@ -121,11 +121,11 @@ const Header = () => {
                     <>
                       {
                         user.role === 'admin' ? (<>
-                          <h6>Hello Admin!</h6>                          
+                          <h6 className='hello'>Hello Admin</h6>                          
                         </>
                         ):(
                         <>
-                          <h6>Welcome Traveler!</h6>
+                          <h6 className='hello'>Welcome Traveler</h6>
                         </>
                         )
                       }
