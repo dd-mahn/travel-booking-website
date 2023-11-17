@@ -37,10 +37,14 @@ const Login = () => {
       const result = await res.json()
 
       if(! res.ok)alert(result.message)
-      console.log(result.data)
-
-      dispatch({type:'LOGIN_SUCCESS', payload:result.data})
-      navigate('/home')
+      dispatch({type:'LOGIN_SUCCESS', payload:{user:result.data, role:result.data.role}})
+      console.log(result.data.role)
+      if(result.data.role === 'user'){
+        navigate('/home')
+      }else{
+        navigate('/admin')
+      }
+      
     } catch (err) {
       dispatch({type:'LOGIN_FAILURE', payload:err.message})
     }
