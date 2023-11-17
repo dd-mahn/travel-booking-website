@@ -46,10 +46,11 @@ export const login = async(req,res) => {
             return res.status(401).json({success:false, message:'Incorrect email or password!'})
         }
 
-        const {password,role, ...rest} = user._doc
+        const {password, ...rest} = user._doc
+        const role = user.role
 
         //create jwt token
-        const token = jwt.sign({id:user._id, role:user._role}, process.env.JWT_SECRET_KEY, {expiresIn: '15d'})
+        const token = jwt.sign({id:user._id, role:user.role}, process.env.JWT_SECRET_KEY, {expiresIn: '15d'})
 
         //set token in the browser cookies and send response to client
         res.cookie('accessToken', token, {
