@@ -12,6 +12,7 @@ import AdminDashboard from '../pages/AdminDashboard'
 import ManageUser from '../pages/AdminPages/ManageUser'
 import ManageBooking from '../pages/AdminPages/ManageBooking'
 import ManageReview from '../pages/AdminPages/ManageReview'
+import ManageTour from '../pages/AdminPages/ManageTour'
 
 
 const Routers = () => {
@@ -28,6 +29,7 @@ const Routers = () => {
         <Route path='/thank-you' element={<ThankYou/>}/>
         <Route path='/admin' element={<AdminDashboard/>}/>
         <Route path='/admin/user' element={<ManageUser/>}/>
+        <Route path='/admin/tour' element={<ManageTour/>}/>
         <Route path='/admin/booking' element={<ManageBooking/>}/>
         <Route path='/admin/review' element={<ManageReview/>}/>
 
