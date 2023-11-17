@@ -11,6 +11,10 @@ const admin__links = [
       display:'Manage User'
     },
     {
+      path:'/admin/tour',
+      display:'Manage Tour'
+    },
+    {
       path:'/admin/booking',
       display:'Manage Booking'
     },
