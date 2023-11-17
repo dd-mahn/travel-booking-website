@@ -157,7 +157,49 @@
 .quote h1>span{
     color: var(--secondary-color);
 }
+/* Experience section */
+.experience{
+    background: #f2f6f7;
+    padding: 5rem 0;
+}
+.experience__content h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
 
+.experience__content p{
+    font-size: 1.2rem;
+    color: var(--text-color-dark);
+    margin-top: 1rem;
+}
+
+.counter__wrapper{
+    margin-top: 4rem;
+}
+.counter__box span{
+    width: 80px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background: #333333;
+    color: #fff;
+    border-radius: 10px 5px 10px 5px;
+}
+
+.counter__box h6{
+    color: var(--text-color-dark);
+    margin-top: 0.7rem;
+    font-size: 1.2rem;
+}
+
+.experience__img img{
+    width: 90%;
+}
 /* Gallery section */
 
 .gallery{
