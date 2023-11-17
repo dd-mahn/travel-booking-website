@@ -10,6 +10,7 @@ import SearchBar from '../shared/SearchBar';
 import MasonryImagesGallery from './HomeComponent/MasonryImagesGallery';
 import Community from './HomeComponent/Community';
 import Newsletter from '../shared/Newsletter';
+import Experience from './HomeComponent/Experience';
 
 import scottImg from '../assets/images/scott.png'
 import heroImg from '../assets/images/hero-img.png'
@@ -81,6 +82,10 @@ const Home = () => {
         </Container>
     </section>
     {/* Selected tours end */}
+
+    {/* Experience start */}
+    <Experience />
+    {/* Experience end */}
 
     {/* Quote section start */}
     <section className='quote'>
