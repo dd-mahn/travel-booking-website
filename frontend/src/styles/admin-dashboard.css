@@ -1,0 +1,67 @@
+.dashboard{
+    background: #fff;
+    color: var(#333);
+}
+
+.dashboard__title{
+    width: 50% !important;
+    padding-bottom: .5rem;
+}
+
+.dashboard__title h2{
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 2.2rem !important;
+}
+
+.dashboard__card{
+    background: #fff;
+    color: #333;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    padding: 2rem;
+}
+
+.dashboard__card h3{
+    margin-bottom: 1rem !important;
+    font-weight: bold;
+    font-size: 1.8rem !important;
+}
+
+.dashboard__card h3 span{
+    font-size: 1.2rem;
+    margin-left: .5rem;
+    font-weight: 500;
+}
+
+.dashboard__graph{
+    padding: 2rem 0;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+}
+
+.dashboard__graph img{
+    width: 90%;
+}
+
+.dashboard__menu{
+    margin-left: 0 !important;
+    padding: 0 !important;
+}
+
+.dashboard__nav-item{
+    padding: .3rem 1rem;
+    color: #333 !important;
+    font-size: 1rem;
+}
+
+.dashboard__nav-item i{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-right: .5rem;
+}
+
+.dashboard__nav-item a{
+    color: #333 !important;
+    font-weight: bold;
+}
