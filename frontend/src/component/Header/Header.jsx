@@ -22,6 +22,26 @@ const nav__links =[
       display: 'Community'
   }
 ]
+
+const admin__links = [
+  {
+    path:'/admin',
+    display: 'Dashboard'
+  },
+  {
+    path:'/admin/user',
+    display:'User'
+  },
+  {
+    path:'/admin/booking',
+    display:'Booking'
+  },
+  {
+    path:'/admin/review',
+    display:'Review'
+  }
+]
+
 const Header = () => {
   const headerRef = useRef(null)
 
@@ -60,27 +80,64 @@ const Header = () => {
               </div>
 
               <div className="navigation ">
-                <ul className="menu d-flex align-center gap-5 mb-0">
-                    {nav__links.map((item,index)=>(
-                      <li className="nav__item" key={index}>
-                          <NavLink to={item.path} className={navClass => navClass.isActive ? 'active__link':''}>{item.display}</NavLink>
-                      </li>
-                    ))}
-                </ul>
+                    {
+                      user?(
+                        <>
+                          {
+                            user.role === 'admin' ?(
+                              <ul className="menu d-flex align-center gap-5 mb-0">
+                                {admin__links.map((item,index)=>(
+                                  <li className="nav__item" key={index}>
+                                      <NavLink to={item.path} className={navClass => navClass.isActive ? 'active__link':''}>{item.display}</NavLink>
+                                  </li>
+                                ))}
+                              </ul>
+                            ):(
+                              <ul className="menu d-flex align-center gap-5 mb-0">
+                                {nav__links.map((item,index)=>(
+                                  <li className="nav__item" key={index}>
+                                      <NavLink to={item.path} className={navClass => navClass.isActive ? 'active__link':''}>{item.display}</NavLink>
+                                  </li>
+                                ))}
+                              </ul>
+                            )
+                          }
+                        </>
+                      ):(
+                        <ul className="menu d-flex align-center gap-5 mb-0">
+                          {nav__links.map((item,index)=>(
+                            <li className="nav__item" key={index}>
+                                <NavLink to={item.path} className={navClass => navClass.isActive ? 'active__link':''}>{item.display}</NavLink>
+                            </li>
+                          ))}
+                        </ul>
+                      )
+                    }
               </div>
               
               <div className="buttons d-flex align-items-center gap-3">
                 {
-                  user?(<>
-                    <h5 className='username mb-0'>{user.username}</h5>
-                    <Button className='logout__btn secondary__btn' onClick={logout}>Logout</Button>
-                  </>
+                  user?(
+                    <>
+                      {
+                        user.role === 'admin' ? (<>
+                          <h6>Hello Admin!</h6>                          
+                        </>
+                        ):(
+                        <>
+                          <h6>Welcome Traveler!</h6>
+                        </>
+                        )
+                      }
+                      <h5 className='username mb-0'>{user.username}</h5>
+                      <Button className='logout__btn secondary__btn' onClick={logout}>Logout</Button>                    
+                    </>
                   ):(
                     <>
                       <Button className="primary__btn login__btn"><Link to='/login'>Login</Link></Button>
                       <Button className="primary__btn register__btn"><Link to='/register'>Register</Link></Button>
                     </>
-                  )
+                  )                 
                 }                
               </div>
             </div>
