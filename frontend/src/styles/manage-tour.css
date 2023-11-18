@@ -1,0 +1,34 @@
+.add__tour-btn{
+    transition: .3s !important;
+    padding: 1rem 3rem !important;
+}
+
+.add__tour-form{
+    padding: 2rem 1.5rem 1rem;
+    border-radius: 20px;
+    background: #fff;
+    border:1px solid var(--primary-color)
+}
+
+.add__tour-form input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 25px;
+    border:none;
+    background: #fff;
+    border:1px solid var(--primary-color)
+}
+
+.add__tour-form input:focus{
+    outline:none !important;
+}
+
+.add__tour-subform div{
+    padding: 0 .3rem;
+}
+
+
+.add__tour-subform:last-child{
+    padding: 0 .3rem;
+
+}
