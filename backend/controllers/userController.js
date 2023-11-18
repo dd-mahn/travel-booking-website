@@ -66,7 +66,7 @@ export const getAllUser = async(req,res) => {
     try {
         const users = await User.find({})
 
-        res.status(200).json({success:true, count:Users.length, message:'Successful', data:sers})
+        res.status(200).json({success:true, count:users.length, message:'Successful', data:users})
     } catch (error) {
         res.status(404).json({success:false, message:'Not found!'})
         
