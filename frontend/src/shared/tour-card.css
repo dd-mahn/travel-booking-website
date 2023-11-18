@@ -113,6 +113,8 @@
 /* For admin tour card */
 .delete__btn{
     background: #ff6e6e !important;
+    font-weight: bold !important;
+    font-size:1.1rem !important;
 }
 
 .modify__btn.primary__btn,
