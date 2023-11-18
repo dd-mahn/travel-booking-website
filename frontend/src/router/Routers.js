@@ -13,6 +13,7 @@ import ManageUser from '../pages/AdminPages/ManageUser'
 import ManageBooking from '../pages/AdminPages/ManageBooking'
 import ManageReview from '../pages/AdminPages/ManageReview'
 import ManageTour from '../pages/AdminPages/ManageTour'
+import UpdateTour from '../pages/AdminPages/UpdateTour'
 
 
 const Routers = () => {
@@ -30,6 +31,7 @@ const Routers = () => {
         <Route path='/admin' element={<AdminDashboard/>}/>
         <Route path='/admin/user' element={<ManageUser/>}/>
         <Route path='/admin/tour' element={<ManageTour/>}/>
+        <Route path='/admin/tour/:id' element={<UpdateTour/>}/>
         <Route path='/admin/booking' element={<ManageBooking/>}/>
         <Route path='/admin/review' element={<ManageReview/>}/>
 
