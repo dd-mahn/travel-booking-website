@@ -109,3 +109,29 @@
 .booking__btn a:hover{
     color: #fff;
 }
+
+/* For admin tour card */
+.delete__btn{
+    background: #ff6e6e !important;
+}
+
+.modify__btn.primary__btn,
+.delete__btn.primary__btn{
+    cursor: pointer;
+    padding: 0.2em 0.6rem !important;
+    border-radius: 10px !important;
+    margin-left: .1rem;
+    transition: .3s !important;
+}
+
+.booking__btn a,
+.delete__btn a{
+    text-decoration: none;
+    font-size:1.1rem !important;
+    color: #fff;
+}
+
+.booking__btn a:hover,
+.delete__btn a:hover{
+    color: #fff;
+}
