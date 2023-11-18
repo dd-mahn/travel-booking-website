@@ -18,7 +18,7 @@ const TourDetails = () => {
   const reviewMsgRef = useRef('')
   const [tourRating, setTourRating] = useState(null)
 
-  const {user} = useContext(AuthContext)
+  const {user, role} = useContext(AuthContext)
 
   //Control submit to server
   const submitHandler = async e => {
@@ -28,7 +28,9 @@ const TourDetails = () => {
     try {
       if(!user || user === undefined || user === null){
         alert('Please login first!')
-      }
+      }else if(user.role === 'admin'){
+        alert("You're not authenticated!")
+      }else{
 
       const reviewObj = {
         username: user?.username,
@@ -51,6 +53,7 @@ const TourDetails = () => {
       }else{
         return alert('Review submitted successfully!')
       }
+    }
     } catch (error) {
       alert(error.message)
     }
