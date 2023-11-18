@@ -1,0 +1,19 @@
+.user__card{
+    padding: 1rem;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+
+}
+
+.user__card h5{
+    font-weight: bold;
+}
+
+.user__card div{
+    margin-bottom: .5rem;
+}
+
+.delete__user-btn{
+    margin:auto;
+}
