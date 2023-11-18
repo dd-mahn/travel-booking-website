@@ -29,16 +29,16 @@ const admin__links = [
     display: 'Dashboard'
   },
   {
+    path:'/admin/tour',
+    display: 'Tour'
+  },
+  {
     path:'/admin/user',
     display:'User'
   },
   {
     path:'/admin/booking',
     display:'Booking'
-  },
-  {
-    path:'/admin/review',
-    display:'Review'
   }
 ]
 
@@ -119,16 +119,6 @@ const Header = () => {
                 {
                   user?(
                     <>
-                      {
-                        user.role === 'admin' ? (<>
-                          <h6 className='hello'>Hello Admin</h6>                          
-                        </>
-                        ):(
-                        <>
-                          <h6 className='hello'>Welcome Traveler</h6>
-                        </>
-                        )
-                      }
                       <h5 className='username mb-0'>{user.username}</h5>
                       <Button className='logout__btn secondary__btn' onClick={logout}>Logout</Button>                    
                     </>
