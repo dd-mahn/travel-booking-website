@@ -136,3 +136,8 @@
 .review__item span{
     font-weight: 500;
 }
+
+.p-sticky{
+    position: sticky;
+    top: 100px;
+}
