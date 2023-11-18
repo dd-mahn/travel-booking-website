@@ -17,10 +17,6 @@ const admin__links = [
     {
       path:'/admin/booking',
       display:'Manage Booking'
-    },
-    {
-      path:'/admin/review',
-      display:'Manage Review'
     }
   ]
 
