@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./tour-card.css"
 import { Card, CardBody } from 'reactstrap'
 import { Link} from 'react-router-dom'
@@ -12,12 +12,18 @@ const AdminTourCard = ({tour}) => {
 
     const {totalRating, avgRating} = calculateAvgRating(reviews)
 
+    const {user} = useContext(AuthContext)
+
     const handleClick = async e => {
         e.preventDefault()
         if(window.confirm('Are your sure?')){
             try {
                 const res = await fetch(`${BASE_URL}/tours/${_id}`, {
                     method:'delete',
+                    headers:{
+                        Authorization: `Bearer ${user.token}`
+                    },
+                    credentials:'include'
                 })
 
                 const result = await res.json()
