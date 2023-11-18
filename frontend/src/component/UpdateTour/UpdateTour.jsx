@@ -1,15 +1,11 @@
 import React, { useContext, useState } from 'react'
 import { Form, FormGroup, Button } from 'reactstrap'
-import useFetch from '../../hooks/useFetch'
 import { BASE_URL } from '../../utils/config'
 import { useNavigate, useParams } from 'react-router-dom'
-import { AuthContext } from '../../context/AuthContext'
 import '../../component/UpdateTour/update-tour.css'
 
 const UpdateTour = (tour) => {
     const {photo, title, desc, price, reviews, address, city, distance, maxGroupSize} = tour
-
-    const {user} = useContext(AuthContext)
 
     const {id} = useParams()
 
@@ -31,27 +27,26 @@ const UpdateTour = (tour) => {
 
     const handleClick = async e => {
         e.preventDefault()
-        try {
-            if(!user || user === undefined || user===null){
-                return alert('Please login first!')
+        if(window.confirm('Are you sure?')){
+            try {
+                const res = await fetch(`${BASE_URL}/tours/${id}`, {
+                    method:'put',
+                    headers:{
+                        'content-type':'application/json'
+                    },
+                    credentials:'include',
+                    body:JSON.stringify(update)
+                })
+                const result = await res.json()
+    
+                if(! res.ok){
+                    return alert(result.message)
+                }
+                alert('Successfully Updated!')
+                navigate('/admin/tour')
+            } catch (error) {
+                alert(error.message)
             }
-            const res = await fetch(`${BASE_URL}/tours/${id}`, {
-                method:'put',
-                headers:{
-                    'content-type':'application/json'
-                },
-                credentials:'include',
-                body:JSON.stringify(update)
-            })
-            const result = await res.json()
-
-            if(! res.ok){
-                return alert(result.message)
-            }
-            alert('Successfully Updated!')
-            navigate('/admin/tour')
-        } catch (error) {
-            alert(error.message)
         }
     }
   return (
