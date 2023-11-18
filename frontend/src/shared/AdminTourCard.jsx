@@ -13,7 +13,6 @@ const AdminTourCard = ({tour}) => {
     <Card>
         <div className="tour__img">
             <img src={photo} alt="tour-img" />
-            {/* {featured && <span>Featured</span>} */}
         </div>
         <CardBody className='card__body'>
             <div className='card__top d-flex align-items-center justify-item-between'>
@@ -30,10 +29,10 @@ const AdminTourCard = ({tour}) => {
             </h5>
             <div className="card__bottom d-flex align-items-center justify-content-evenly mt-3">
                 <button className="primary__btn modify__btn">
-                    <Link to = {`/admin/tour/update/${_id}`}>Modify</Link>
+                    <Link to = {`/tours/${_id}`}>Modify</Link>
                 </button>
                 <button className="primary__btn delete__btn">
-                    <Link to = {`/admin/tour/delete/${_id}`}>Delete</Link>
+                    <Link to = {`/tours/${_id}`}>Delete</Link>
                 </button>
 
             </div>
