@@ -141,3 +141,7 @@
     position: sticky;
     top: 100px;
 }
+
+.reviews__input-btn{
+    font-weight: bold !important;
+}
