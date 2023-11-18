@@ -10,6 +10,7 @@ import CommonSection from '../shared/CommonSection'
 import useFetch from '../hooks/useFetch.js'
 import { BASE_URL } from '../utils/config'
 import { AuthContext } from '../context/AuthContext'
+import UpdateTour from '../component/UpdateTour/UpdateTour.jsx'
 
 const TourDetails = () => {
   const {id} = useParams()
@@ -160,7 +161,21 @@ const TourDetails = () => {
             </Col>
 
             <Col lg='4'>
-              <Booking tour={tour} avgRating={avgRating}/>
+              {
+                user?(
+                  <div className='p-sticky'>
+                    {
+                      user.role === 'admin'?(
+                        <UpdateTour />
+                      ):(
+                        <Booking tour={tour} avgRating={avgRating}/>
+                      )
+                    }
+                  </div>                                     
+                ):(
+                  <Booking tour={tour} avgRating={avgRating}/>
+                )
+              }
             </Col>
           </Row>
           }
