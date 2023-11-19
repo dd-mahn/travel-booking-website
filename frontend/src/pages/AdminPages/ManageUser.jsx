@@ -54,7 +54,7 @@ const ManageUser = () => {
     username:'',
     email:'',
     password:'',
-    role:'user'
+    role:''
   })
 
   const handleChange = e => {
@@ -62,6 +62,7 @@ const ManageUser = () => {
   }
 
   const handleClick = async e => {
+    console.log(account)
     e.preventDefault()
     if(window.confirm('Are you sure?')){
       try {
