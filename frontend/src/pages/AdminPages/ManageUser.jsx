@@ -52,6 +52,7 @@ const ManageUser = () => {
 
   const [account, setAccount] = useState({
     username:'',
+    email:'',
     password:'',
     role:'user'
   })
@@ -61,7 +62,29 @@ const ManageUser = () => {
   }
 
   const handleClick = async e => {
+    e.preventDefault()
+    if(window.confirm('Are you sure?')){
+      try {
+        const res = await fetch(`${BASE_URL}/auth/register`, {
+          method:'post',
+          headers:{
+            'content-type':'application/json'
+          },
+          credentials:'include',
+          body:JSON.stringify(account)
+        })
 
+        const result = await res.json()
+        if(! res.ok){
+          return alert(result.message)
+        }else{
+          return alert('New Account Added!')
+        }
+
+      } catch (error) {
+        alert(error.message)
+      }
+    }
   }
 
   return (
@@ -72,21 +95,26 @@ const ManageUser = () => {
           <Row>
             <Form className="add__account-form">
               <FormGroup className='d-flex align-items-center justify-content-between'>
-                <Col lg='4'>
+                <Col lg='6'>
                   <input type="text" id='username' placeholder='Username' required onChange={handleChange}/>
                 </Col>
-                <Col lg='4'>
-                  <input type="password" id='password' placeholder='Password' minLength={8} required onChange={handleChange}/>
-                </Col>
-                <Col lg='4'>
-                  <input type="radio" className='role__input' id='role' value='admin' />
-                  <label htmlFor="role">Admin</label>
-                  <input type="radio" className='role__input' id='role' value='user' defaultChecked/>
-                  <label htmlFor="role">User</label>
+                <Col lg='6'>
+                  <input type="text" id='email' placeholder='Email' required onChange={handleChange} />
                 </Col>
               </FormGroup>
               <FormGroup className='d-flex align-items-center justify-content-center mb-0'>
+                <Col lg='5'>
+                  <input type="password" id='password' placeholder='Password' minLength={8} required onChange={handleChange}/>
+                </Col>
+                <Col lg='4' className='d-flex align-items-center justify-content-evenly'>
+                  <input type="radio" className='role__input' name='role' id='role' value='admin' onClick={handleChange}/>
+                  <label htmlFor="admin">Admin</label>
+                  <input type="radio" className='role__input' name='role' id='role' value='user' onClick={handleChange} defaultChecked/>
+                  <label htmlFor="user">User</label>
+                </Col>
+                <Col lg='3'>
                   <button className='secondary__btn add__account-btn' onClick={handleClick}>Add New Account</button>               
+                </Col>
               </FormGroup>
             </Form>
           </Row>  
