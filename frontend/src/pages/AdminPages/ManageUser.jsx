@@ -50,10 +50,49 @@ const ManageUser = () => {
 
   const {data:users, loading, error} = useFetch(`${BASE_URL}/users`)
 
+  const [account, setAccount] = useState({
+    username:'',
+    password:'',
+    role:'user'
+  })
+
+  const handleChange = e => {
+    setAccount(prev => ({...prev, [e.target.id]:e.target.value}))
+  }
+
+  const handleClick = async e => {
+
+  }
+
   return (
     <>
       <CommonSection title='Manage Users'/>
-
+      <section>
+        <Container>
+          <Row>
+            <Form className="add__account-form">
+              <FormGroup className='d-flex align-items-center justify-content-between'>
+                <Col lg='4'>
+                  <input type="text" id='username' placeholder='Username' required onChange={handleChange}/>
+                </Col>
+                <Col lg='4'>
+                  <input type="password" id='password' placeholder='Password' minLength={8} required onChange={handleChange}/>
+                </Col>
+                <Col lg='4'>
+                  <input type="radio" className='role__input' id='role' value='admin' />
+                  <label htmlFor="role">Admin</label>
+                  <input type="radio" className='role__input' id='role' value='user' defaultChecked/>
+                  <label htmlFor="role">User</label>
+                </Col>
+              </FormGroup>
+              <FormGroup className='d-flex align-items-center justify-content-center mb-0'>
+                  <button className='secondary__btn add__account-btn' onClick={handleClick}>Add New Account</button>               
+              </FormGroup>
+            </Form>
+          </Row>  
+        </Container>
+      </section>
+          
       <section>
         <Container>
           {loading && <h4 className='text-center pt-5'>Loading...</h4>}
