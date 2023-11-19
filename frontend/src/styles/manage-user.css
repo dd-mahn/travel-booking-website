@@ -17,3 +17,38 @@
 .delete__user-btn{
     margin:auto;
 }
+
+.add__account-form{
+    padding:1rem;
+    border-radius: 20px;
+    border:1px solid var(--primary-color)
+}
+
+.add__account-form .d-flex{
+    margin-bottom: 0 !important;
+}
+
+.add__account-form div{
+    padding:1rem;
+}
+
+.add__account-form input{
+    width: 100%;
+    padding: .5rem 1rem;
+    border-radius:20px;
+    border:1px solid var(--primary-color);
+}
+
+.add__account-form input:focus{
+    outline:none;
+}
+
+.role__input{
+    width: auto !important;
+    margin:0 1rem;
+}
+
+.add__account-btn{
+    padding: 1rem;
+    transition:.3s;
+}
