@@ -29,7 +29,7 @@
 }
 
 .add__account-form div{
-    padding:1rem;
+    padding:.5rem;
 }
 
 .add__account-form input{
@@ -45,7 +45,7 @@
 
 .role__input{
     width: auto !important;
-    margin:0 1rem;
+    /* margin:0 1rem; */
 }
 
 .add__account-btn{
