@@ -10,14 +10,17 @@
     font-weight: bold;
 }
 
-.update__tour-form{
-
+.update__tour-form div{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
 }
 
 .update__tour-form input{
     border:1px solid var(--primary-color);
     border-radius: 15px;
     padding: .5rem 1rem;
+    width: 100% !important;
 }
 
 .update__tour-form input:focus{
