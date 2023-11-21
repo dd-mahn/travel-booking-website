@@ -76,7 +76,7 @@ const Header = () => {
         <Row>
             <div className="nav__container d-flex align-items-center justify-content-between">
               <div className="brand">
-                <span>TravelScott</span>
+                <span><Link to='/'>TravelScott</Link></span>
               </div>
 
               <div className="navigation ">
