@@ -57,7 +57,7 @@ a{
 
 .primary__btn:hover {
     opacity: 0.8;
-    color: inherit;
+    color: #fff;
 }
 .secondary__btn {
     background: var(--secondary-color) !important;
