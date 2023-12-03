@@ -37,7 +37,10 @@ const UserCard = ({User}) => {
         <div>
         <span>Role: {User.role}</span>
         </div>
-        <button className='primary__btn delete__btn delete__user-btn' onClick={handleDelete}>Delete User</button>
+        <div className="card__bottom d-flex align-items-center justify-content-evenly mt-3">
+          <button className='primary__btn modify__btn '>Modify</button>
+          <button className='primary__btn delete__btn delete__user-btn' onClick={handleDelete}>Delete</button>
+        </div>
     </div>    
   )
 }
