@@ -1,5 +1,5 @@
 # TravelScott
-This is my school project which was built with MERN stack(MongoDB - ExpressJs - ReactJs - NodeJs). The purpose is to develop a fully functional travel website with nice and unique UI/UX. Until 24/11/2023. this project was 80% completed. Soon I will upgrade it with a DSS function(act like an AI assistant) for traveling suggestions.
+This school project was crafted using the robust MERN stack, incorporating MongoDB, ExpressJs, ReactJs, and NodeJs. The primary objective was to create a fully functional travel website featuring a visually appealing and distinctive UI/UX design. As of November 24, 2023, the project had reached an impressive 80% completion milestone. Future plans involve enhancing its capabilities by integrating a Decision Support System (DSS) function, designed to function as an AI assistant, providing valuable travel suggestions and further augmenting the overall user experience. Stay tuned for the upcoming upgrades!
 
 How to test:
 /frontend: `npm start`
