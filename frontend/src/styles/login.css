@@ -3,7 +3,7 @@
 }
 
 .login__container{
-    
+    min-height: 55vh;
 }
 
 .login__form{
