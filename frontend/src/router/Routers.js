@@ -8,10 +8,6 @@ import TourDetails from '../pages/TourDetails'
 import SearchResultList from '../pages/SearchResultList.jsx'
 import Scott from '../pages/Scott'
 import ThankYou from '../pages/ThankYou'
-import AdminDashboard from '../pages/AdminDashboard'
-import ManageUser from '../pages/AdminPages/ManageUser'
-import ManageBooking from '../pages/AdminPages/ManageBooking'
-import ManageTour from '../pages/AdminPages/ManageTour'
 
 
 const Routers = () => {
@@ -26,10 +22,10 @@ const Routers = () => {
         <Route path='/login' element={<Login/>}/>
         <Route path='/tours/search' element={<SearchResultList/>}/>
         <Route path='/thank-you' element={<ThankYou/>}/>
-        <Route path='/admin' element={<AdminDashboard/>}/>
+        {/* <Route path='/admin' element={<AdminDashboard/>}/>
         <Route path='/admin/user' element={<ManageUser/>}/>
         <Route path='/admin/tour' element={<ManageTour/>}/>
-        <Route path='/admin/booking' element={<ManageBooking/>}/>
+        <Route path='/admin/booking' element={<ManageBooking/>}/> */}
 
 
 
