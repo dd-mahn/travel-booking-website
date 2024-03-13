@@ -45,7 +45,7 @@ const Register = () => {
   }
   return <section>
     <Container>
-      <Row className='mb-5'>
+      <Row className='mb-5 d-flex align-items-center'>
         <Col lg='6'>
           <div className="login__img d-flex align-items-center justify-content-center">
             <img src={registerImg} alt="" />

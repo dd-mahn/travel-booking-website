@@ -38,12 +38,12 @@ const Login = () => {
 
       if(! res.ok)alert(result.message)
       dispatch({type:'LOGIN_SUCCESS', payload:{user:result.data, role:result.data.role}})
-      console.log(result.data.role)
       if(result.data.role === 'user'){
         navigate('/home')
-      }else{
-        navigate('/admin')
       }
+      // else{
+      //   navigate('/admin')
+      // }
       
     } catch (err) {
       dispatch({type:'LOGIN_FAILURE', payload:err.message})
@@ -51,14 +51,14 @@ const Login = () => {
   }
   return <section>
     <Container>
-      <Row className='mb-5'>
+      <Row className='mb-5 d-flex align-items-center login__container'>
         <Col lg='6'>
           <div className="login__img d-flex align-items-center justify-content-center">
             <img src={loginImg} alt="" />
           </div>
         </Col>
         <Col lg='6' className=''>
-          <div className="login__container">
+          <div>
             <div className="login__form d-flex flex-column align-items-center justify-content-center">
               
               <h2 className='mt-3'>Login</h2>
