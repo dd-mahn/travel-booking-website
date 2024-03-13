@@ -1,6 +1,6 @@
 import {React, useState, useEffect} from 'react'
 import { Container, Row, Col, Form, FormGroup } from 'reactstrap'
-import AdminTourCard from '../../shared/AdminTourCard'
+import AdminTourCard from './AdminTourCard'
 import CommonSection from '../../shared/CommonSection'
 import SearchBar from '../../shared/SearchBar'
 import '../../styles/manage-tour.css'

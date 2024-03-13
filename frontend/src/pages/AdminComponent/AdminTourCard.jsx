@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
-import "./tour-card.css"
+import "../../shared/tour-card.css"
 import { Card, CardBody } from 'reactstrap'
 import { Link} from 'react-router-dom'
-import calculateAvgRating from '../utils/avgRating'
+import calculateAvgRating from '../../utils/avgRating'
 
-import { AuthContext } from '../context/AuthContext'
-import { BASE_URL } from '../utils/config'
+import { AuthContext } from '../../context/AuthContext'
+import { BASE_URL } from '../../utils/config'
 
 const AdminTourCard = ({tour}) => {
     const {_id, city, title, photo, price, featured, reviews} = tour
