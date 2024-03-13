@@ -7,14 +7,14 @@ import TourCard from '../shared/TourCard'
 
 import Newsletter from '../shared/Newsletter'
 import { AuthContext } from '../context/AuthContext'
-import AdminTourCard from '../shared/AdminTourCard'
+// import AdminTourCard from './AdminComponent/AdminTourCard'
 
 const SearchResultList = () => {
   const location = useLocation()
 
   const [data] = useState(location.state)
 
-  const {user} = useContext(AuthContext)
+  // const {user} = useContext(AuthContext)
 
   return (
     <>
@@ -28,19 +28,19 @@ const SearchResultList = () => {
               : ( data?.map(tour => (
                 <Col lg='3' className='mb-4' key={tour._id}>
                   {
-                    user?(
-                      <div>
-                        {
-                          user.role === 'admin'?(
-                            <AdminTourCard tour={tour}/>
-                          ):(
-                            <TourCard tour={tour}/>
-                          )
-                        }
-                      </div>
-                    ):(
+                    // user?(
+                    //   <div>
+                    //     {
+                    //       // user.role === 'admin'?(
+                    //       //   <AdminTourCard tour={tour}/>
+                    //       // ):(
+                    //         <TourCard tour={tour}/>
+                    //       // )
+                    //     }
+                    //   </div>
+                    // ):(
                       <TourCard tour={tour}/>                      
-                    )
+                    // )
                   }
                 </Col>
               )))
