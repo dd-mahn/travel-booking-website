@@ -1,11 +1,14 @@
 # TravelScott
-This school project was crafted using the robust MERN stack, incorporating MongoDB, ExpressJs, ReactJs, and NodeJs. The primary objective was to create a fully functional travel website featuring a visually appealing and distinctive UI/UX design. As of November 24, 2023, the project had reached an impressive 80% completion milestone. Future plans involve enhancing its capabilities by integrating a Decision Support System (DSS) function, designed to function as an AI assistant, providing valuable travel suggestions and further augmenting the overall user experience. Stay tuned for the upcoming upgrades!
+This project was built for my school's major assignment, using the MERN stack. The primary objective was to create a fully functional booking/travel website featuring a visually appealing and distinctive UI/UX design. The project was still missing some features, but it reached my assignment goal. As I was not entirely satisfied, I'll make a brand new enhanced version of it in the future.
 
-Quick start:
+**Quick start**:
 1. Clone the repository
 2. `npm install`
-3. Test the project
-`cd ./frontend` - `npm start`
+3. Test the project (note that tours may not be displayed because this website is not hosted and currently using my MongoDB database)
 `cd ./backend` - `npm run start-dev`
+`cd ./frontend` - `npm start`
+
+**Illustrations credit**: storyset.com
+
 
 
