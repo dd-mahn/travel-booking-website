@@ -1,6 +1,9 @@
 # TravelScott
 This project was built for my school's major assignment, using the MERN stack. The primary objective was to create a fully functional booking/travel website featuring a visually appealing and distinctive UI/UX design. The project was still missing some features, but it reached my assignment goal. As I was not entirely satisfied, I'll make a brand new enhanced version of it in the future.
 
+**Video Demo**: [Click here](https://drive.google.com/drive/u/0/folders/1J_c0msLlE3eH5GnAjpc2pfNVqajq-4a-)
+
+
 **Quick start**:
 1. Clone the repository
 2. `npm install`
